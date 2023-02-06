@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exStore</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+
+<body>
+    <!-- Header Start -->
+    <header id="header">
+        <nav>
+            <div id="logo">
+                <img src="./images/eXStore.png" alt="exStore">
+            </div>
+            <ul class="nav-elements">
+                <li><a href="#">Games</a></li>
+                <li><a href="#">Browse Games <i class="uil uil-angle-down"></i></a></li>
+                <li><a href="#">Store</a></li>
+            </ul>
+            <ul class="nav-btns">
+                <button><a href="#">Login</a></button>
+                <button><a href="#">SignUp</a></button>
+            </ul>
+        </nav>
+    </header>
+    <!-- Header End -->
+
+    <!-- Hero Section start -->
+
+    <section class="hero-section">
+        <div class="hero-content">
+            <h2>MultiVersus</h2>
+            <p>Now officially free to play for all Xbox users.</p>
+            <button class="btn"><a href="#">Get in now!</a></button>
+        </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- Why us Section start -->
+
+    <section class="why-us">
+        <h2>Why eXStore?</h2>
+        <p>We are the official Xbox partner in Indonesia that provides official video games.</p>
+        <div class="frames container">
+            <div class="frame">
+                <div class="icon-bg">
+                    <img src="./images/joystick.png" alt="joystick">
+                </div>
+                <p>5000+ video games available</p>
+            </div>
+            <div class="frame">
+                <div class="icon-bg">
+                    <img src="./images/badge-check.png" alt="badge-check">
+                </div>
+                <p>Trusted by 100.000+ customers</p>
+            </div>
+            <div class="frame">
+                <div class="icon-bg">
+                    <img src="./images/xbox.png" alt="xbox">
+                </div>
+                <p>Available for all Xbox consoles</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Why Us section end -->
+
+
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function () {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("header").style.top = "0";
+            } else {
+                document.getElementById("header").style.top = "-83px";
+            }
+            prevScrollpos = currentScrollPos;
+        }
+    </script>
+</body>
+
+</html>

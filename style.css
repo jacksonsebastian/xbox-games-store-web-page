@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lexend', sans-serif;
+}
+
+
+/* Header Start */
+
+header {
+    padding: 0 5%;
+    position: absolute;
+    width: 100%;
+    min-height: 83px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1;
+    transition: ease 1s;
+}
+
+img {
+    display: block;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-elements {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-elements li {
+    list-style: none;
+    padding: 0 20px;
+}
+
+.nav-elements li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    font-size: 18px;
+    transition: ease .5s;
+}
+
+.nav-elements li a:hover{
+    color: #3B44F6;
+}
+
+.nav-btns button {
+    margin: 0 8px;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.nav-btns button a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.nav-btns button:nth-child(1) {
+    background: #3B44F6;
+    border-radius: 8px;
+    border: none;
+    transition: ease 1s;
+}
+
+.nav-btns button:nth-child(1):hover {
+    background: transparent;
+    border-radius: 8px;
+    border: 1px solid #ffffff;
+}
+
+.nav-btns button:nth-child(2) {
+    background: transparent;
+    border-radius: 8px;
+    border: 1px solid #ffffff;
+    transition: ease 1s;
+}
+
+.nav-btns button:nth-child(2):hover {
+    background: transparent;
+    border-radius: 8px;
+    border: 1px solid #3B44F6;
+}
+
+/* Header End */
+
+/* Hero Section Start */
+
+.hero-section {
+    position: relative;
+    background-image: url(./images/banner-1.png);
+    min-height: 100vh;
+    padding-left: 5%;
+    /* display: flex;
+    align-items: center; */
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: scroll;
+}
+
+.hero-content {
+    position: absolute;
+    top: 197px;
+    
+}
+
+.hero-content h2 {
+    font-weight: 600;
+    font-size: 48px;
+    color: #ffffff;
+    margin-bottom: 17px;
+}
+
+.hero-content p {
+    max-width: 417px;
+    font-weight: 500;
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 64px;
+}
+
+.btn {
+    background-color: #3B44F6;
+    border-radius: 8px;
+    padding: 16px 32px;
+    border: none;
+    cursor: pointer;
+    transition: ease 1s;
+}
+
+.btn:hover {
+    background: transparent;
+    border-radius: 8px;
+    border: 1px solid #ffffff;
+}
+
+.btn a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+/* hero section end */
+
+/* Container */
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* Why us Section start */
+
+.why-us {
+    width: 100%;
+    padding: 0 5%;
+    display: flex;
+    flex-direction: column;
+    margin: 70px 0;
+}
+
+.why-us h2 {
+    text-align: center;
+    color: #181818;
+    font-weight: 600;
+    font-size: 36px;
+    margin-bottom: 16px;
+}
+
+.why-us>p {
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    color: #323232;
+}
+
+.frames {
+    display: flex;
+    width: 100%;
+    max-width: 916px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    
+}
+
+.icon-bg {
+    min-height: 94px;
+    width: 94px;
+    background-color: #D8DAFD;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.frame {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.frame p {
+    font-weight: 500;
+    font-size: 20px;
+    color: #181818;
+    text-align: center;
+    margin-top: 21px;
+}
