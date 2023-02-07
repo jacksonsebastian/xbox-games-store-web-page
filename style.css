@@ -54,7 +54,7 @@ nav {
     transition: ease .5s;
 }
 
-.nav-elements li a:hover{
+.nav-elements li a:hover {
     color: #3B44F6;
 }
 
@@ -106,8 +106,6 @@ nav {
     background-image: url(./images/banner-1.png);
     min-height: 100vh;
     padding-left: 5%;
-    /* display: flex;
-    align-items: center; */
     width: 100%;
     background-size: cover;
     background-position: center;
@@ -118,7 +116,7 @@ nav {
 .hero-content {
     position: absolute;
     top: 197px;
-    
+
 }
 
 .hero-content h2 {
@@ -173,7 +171,8 @@ nav {
     padding: 0 5%;
     display: flex;
     flex-direction: column;
-    margin: 70px 0;
+    padding: 70px 0;
+    background-color: #F0F0F0;
 }
 
 .why-us h2 {
@@ -199,7 +198,7 @@ nav {
     align-items: center;
     flex-wrap: wrap;
     margin-top: 60px;
-    
+
 }
 
 .icon-bg {
@@ -217,6 +216,12 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: ease 0.5s;
+}
+
+.frame:hover {
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 5px rgba(59, 68, 246, 0.26);
 }
 
 .frame p {
@@ -226,3 +231,171 @@ nav {
     text-align: center;
     margin-top: 21px;
 }
+
+/* Why us section end */
+
+/* Games Genre Start */
+
+.games-genre {
+    width: 100%;
+    padding: 40px 5%;
+    background-color: #F0F0F0;
+}
+
+.games-genre--title {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 24px;
+}
+
+.games-genre--title h2 {
+    text-align: left;
+    font-weight: 600;
+    font-size: 36px;
+    color: #181818;
+}
+
+.games-genre--title span {
+    text-align: right;
+    font-weight: 600;
+    font-size: 18px;
+    color: #3B44F6;
+}
+
+.games-genre--frames {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.games-genre--frames img {
+    border-radius: 8px;
+}
+
+/* Game Genre Section End */
+
+/* Best Seller section Start */
+.best-seller {
+    background-color: #F0F0F0;
+    padding: 30px 5%;
+    padding-bottom: 30px;
+}
+
+.best-seller--title {
+    margin-top: 10px;
+    margin-bottom: 28px;
+}
+
+.best-seller--title h2 {
+    font-weight: 600;
+    font-size: 36px;
+    color: #181818;
+}
+
+.game-cards {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.slider-btn {
+    position: absolute;
+    top: 35%;
+    right: -20px;
+    width: 36px;
+    height: 36px;
+    background: #FFFFFF;
+    border-radius: 50%;
+    color: #3B44F6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 34px;
+}
+.slider-btn:hover{
+    cursor: pointer;
+    border: 0.5px solid #D1D1D1;
+    box-shadow: 0px 8px 10px rgba(164, 164, 164, 0.07);
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 16px 16px 24px 16px;
+    border-radius: 8px;
+    margin-bottom: 24px;
+}
+
+.card:hover {
+    border: 0.3px solid #D1D1D1;
+    box-shadow: 0px 8px 10px rgba(164, 164, 164, 0.07);
+    border-radius: 8px;
+}
+
+.card p {
+    font-weight: 500;
+    font-size: 20px;
+    color: #181818;
+    margin-top: 15px;
+}
+
+.card ul {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 17px;
+}
+
+.card ul li {
+    list-style: none;
+}
+
+.card ul li:nth-child(1) {
+    font-weight: 500;
+    font-size: 16px;
+    color: #3B44F6;
+}
+
+.card span {
+    width: 31px;
+    height: 22px;
+    background: rgba(252, 50, 111, 0.2);
+    border-radius: 4px;
+    color: #FC326F;
+    font-weight: 500;
+    font-size: 12px;
+    margin-right: 6px;
+    padding: 3px;
+
+}
+
+.card li:nth-child(2) {
+    font-weight: 500;
+    font-size: 14px;
+    color: #7D7D7D;
+}
+
+.download-btn {
+    background-color: #D8DAFD;
+    padding: 4px 10px;
+    border: none;
+    border-radius: 4px;
+}
+
+.download-btn a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    color: #3B44F6;
+}
+
+/* Best Seller section End */
+
+/* Popular Section Start */
+.popular-games {
+    padding: 30px 5%;
+    padding-bottom: 80px;
+    background-color: #F0F0F0;
+}
+
+/* Popular Section End */
