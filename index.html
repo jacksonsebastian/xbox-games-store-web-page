@@ -32,13 +32,16 @@
 
     <!-- Hero Section start -->
 
-    <section class="hero-section">
+    <section class="hero-section" id="slide-img">
         <div class="hero-content">
             <h2>MultiVersus</h2>
             <p>Now officially free to play for all Xbox users.</p>
             <button class="btn"><a href="#">Get in now!</a></button>
         </div>
+        
     </section>
+    <button id="left-button">&lt;</button>
+        <button id="right-button">&gt;</button>
     <!-- Hero Section End -->
 
     <!-- Why us Section start -->
@@ -201,6 +204,136 @@
         </div>
     </section>
     <!-- Popular section End -->
+
+    <!-- Coming soon section Start -->
+    <Section class="coming-soon">
+        <div class="coming-soon--title container">
+            <h2>Coming Soon</h2>
+        </div>
+        <div class="row container">
+            <div class="col-1">
+                <div>
+                    <img src="./images/XBox-Game/1.png" alt="COD W-II">
+                </div>
+                <div>
+                    <img src="./images/XBox-Game/2.png" alt="NBA 2k23">
+                </div>
+            </div>
+            <div class="col-2">
+                <div>
+                    <img src="./images/XBox-Game/3.png" alt="FIFA">
+                </div>
+                <div>
+                    <img src="./images/XBox-Game/4.png" alt="FIFA">
+                </div>
+                <div>
+                    <img src="./images/XBox-Game/5.png" alt="FIFA">
+                </div>
+            </div>
+        </div>
+    </Section>
+    <!-- Coming soon section End -->
+
+    <!-- User Review Section Start -->
+    <section class="user-review">
+        <div class="user-review--title">
+            <h2>12.000+ gamers satisfied</h2>
+            <p>Let's hear what our customers have to say about their satisfaction with our services and products.</p>
+        </div>
+        <div class="user-review--cards">
+            <div class="review-card">
+                <img src="./images/user-profile/user-1.png" alt="Profile">
+                <h2>Jacob Jones</h2>
+                <ul>
+                    <li><i class="uim uim-star"></i></li>
+                    <li><i class="uim uim-star"></i></li>
+                    <li><i class="uim uim-star"></i></li>
+                    <li><i class="uim uim-star"></i></li>
+                    <li><i class="uim uim-star"></i></li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel leo vitae ipsum vestibulum porta.
+                </p>
+            </div>
+            <div class="review-card">
+                <img src="./images/user-profile/user-2.png" alt="Profile">
+                <h2>Jacob Jones</h2>
+                <ul>
+                    <li><i class="uim uim-star"></i></li>
+                    <li><i class="uim uim-star"></i></li>
+                    <li><i class="uim uim-star"></i></li>
+                    <li><i class="uim uim-star"></i></li>
+                    <li><i class="uim uim-star"></i></li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel leo vitae ipsum vestibulum porta.
+                </p>
+            </div>
+            <div class="review-card">
+                <img src="./images/user-profile/user-3.png" alt="Profile">
+                <h2>Jacob Jones</h2>
+                <ul>
+                    <li><i class="uim uim-star"></i></li>
+                    <li><i class="uim uim-star"></i></li>
+                    <li><i class="uim uim-star"></i></li>
+                    <li><i class="uim uim-star"></i></li>
+                    <li><i class="uim uim-star"></i></li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel leo vitae ipsum vestibulum porta.
+                </p>
+            </div>
+        </div>
+        <ul class="slider-dot">
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </section>
+    <!-- User Review section End -->
+
+    <!-- Footer Start-->
+    <footer class="footer">
+        <div class="footer-content container">
+            <div class="footer-logo">
+                <img style="display: block;" src="./images/eXStore.png" alt="exStore">
+            </div>
+            <dl>
+                <dt>Menu</dt>
+                <dd>
+                    <ul>
+                        <li><a href="#">Order Tracking</a></li>
+                        <li><a href="#">Store location</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </dd>
+            </dl>
+            <dl>
+                <dt>Resources</dt>
+                <dd>
+                    <ul>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Guideline</a></li>
+                    </ul>
+                </dd>
+            </dl>
+            <dl class="footer-icons">
+                <dt>Follow us on:</dt>
+                <dd>
+                    <ul>
+                        <li><a href="#"><img src="./images/footer-icons/insta.png" alt="instagram"></a></li>
+                        <li><a href="#"><img src="./images/footer-icons/yt.png" alt="Youtube"></a></li>
+                        <li><a href="#"><img src="./images/footer-icons/twitch.png" alt="Twicth"></a></li>
+                        <li><a href="#"><img src="./images/footer-icons/twitter.png" alt="Twitter"></a></li>
+                    </ul>
+                </dd>
+            </dl>
+        </div>
+        <div class="footer-copyright container">
+            <p>&copy; 2023 exStore | All Rights Reserved: Jackson S</p>
+        </div>
+    </footer>
+    <!-- Footer End-->
     <script>
         var prevScrollpos = window.pageYOffset;
         window.onscroll = function () {
@@ -212,7 +345,54 @@
             }
             prevScrollpos = currentScrollPos;
         }
+
+        var slideImg = document.getElementById('slide-img').style.backgroundImage;
+        var leftButton = document.getElementById('left-button');
+        var rightButton = document.getElementById('right-button');
+        var images = new Array(
+            "images/banner/banner-1.png",
+            "images/banner/banner-2.jpg",
+            "images/banner/banner-3.jpg",
+        );
+        var slideImg = document.getElementById('slide-img');
+
+        var images = new Array(
+            "images/banner/banner-1.png",
+            "images/banner/banner-2.jpg",
+            "images/banner/banner-3.jpg",
+        );
+        var len = images.length;
+        var i = 0;
+
+        function slider() {
+            if (i > len - 1) {
+                i = 0;
+            }
+            slideImg.style.backgroundImage = "url(" + images[i] + ")";
+            i++;
+            setTimeout(slider, 3000);
+        }
+        slider();
+
+        // button click 
+
+        leftButton.addEventListener('click', function () {
+            i--;
+            if (i < 0) {
+                i = len - 1;
+            }
+            slideImg.style.backgroundImage = "url(" + images[i] + ")";
+        });
+
+        rightButton.addEventListener('click', function () {
+            i++;
+            if (i > len - 1) {
+                i = 0;
+            }
+            slideImg.style.backgroundImage = "url(" + images[i] + ")";
+        });
     </script>
+    <script src="https://unicons.iconscout.com/release/v4.0.0/script/monochrome/bundle.js"></script>
 </body>
 
 </html>
